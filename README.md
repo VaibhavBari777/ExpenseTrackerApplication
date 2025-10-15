@@ -59,7 +59,6 @@ ExpenseTracker/
 ├── README.md
 └── server.js
 
-
 ## 🔗 External API Integrations
 
 ### 🌟 1. **Gemini (Google AI) API**
@@ -155,4 +154,5 @@ module.exports = router;
 * Securing and switching between `.env` or `config.js`?
 
 Let me know and I’ll walk you through whatever you need next.
+
 
