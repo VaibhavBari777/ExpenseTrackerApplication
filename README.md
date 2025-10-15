@@ -18,33 +18,29 @@ Nice — sounds like you’re building a **multi-feature Expense Tracker** that 
 ---
 
 ## 📦 Suggested Folder Structure (Backend + Frontend)
+ExpenseTracker/
+├── client/                 <-- React frontend (UI)
+├── config/                 <-- DB connection (Mongoose)
+├── controllers/            <-- Route logic (business logic)
+├── middlewares/           <-- Auth or error handlers
+├── models/                 <-- Mongoose schemas
+├── routes/                 <-- Express route files (API endpoints)
+├── utils/                  <-- Helpers/utilities
+├── server.js              <-- Main backend entry point
+├── .env                   <-- Secrets (MONGO_URI, API Keys)
+├── .gitignore             <-- Ignore sensitive files
 
-```
-expense-tracker/
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── config/
-│   │   └── connectDb.js
-│   ├── utils/
-│   ├── server.js
-│   └── config.js (.gitignored if using)
-│
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/      <-- API calls (axios)
-│   │   ├── utils/         <-- e.g. date formatter, currency utils
-│   │   └── App.js
-│   └── package.json
-│
-├── .env (gitignored)
-├── .gitignore
-└── README.md
-```
+
+## Frontend Structure
+src/
+├── components/             <-- Reusable UI parts
+│   ├── Layout/             <-- Header, Footer, Sidebar etc.
+│   ├── Bot.js              <-- Gemini/Chat integration
+│   ├── StockTable.js       <-- Stock display
+│   └── NewsCalls.js        <-- Daily news component
+├── page/                   <-- (Probably pages like Dashboard, Login)
+├── App.js                  <-- Main component, handles routes
+├── index.js                <-- React entry point
 
 ---
 
@@ -143,3 +139,4 @@ module.exports = router;
 * Securing and switching between `.env` or `config.js`?
 
 Let me know and I’ll walk you through whatever you need next.
+
