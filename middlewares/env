@@ -1,0 +1,2 @@
+PORT=8080
+MONGO_URL=mongodb+srv://vaibhavbari999:yHQsGahNmOa1yHSr@cluster0.0orfxav.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
