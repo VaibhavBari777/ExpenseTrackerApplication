@@ -17,7 +17,6 @@ Nice — sounds like you’re building a **multi-feature Expense Tracker** that 
 
 ---
 
-<details>
 <summary><strong>📁 Project File Structure</strong></summary>
 
 ```bash
@@ -65,7 +64,6 @@ ExpenseTracker/
 └── server.js
 ```
 
-</details>
 
 ---
 
@@ -185,6 +183,7 @@ module.exports = router;
 * Securing and switching between `.env` or `config.js`?
 
 Let me know and I’ll walk you through whatever you need next.
+
 
 
 
