@@ -16,33 +16,49 @@ Nice — sounds like you’re building a **multi-feature Expense Tracker** that 
 | 📈 **Daily Stock Data**      | Display stock prices or market news                  |
 
 ---
-
-## 📦 Suggested Folder Structure (Backend + Frontend)
 ExpenseTracker/
-├── client/                 <-- React frontend (UI)
-├── config/                 <-- DB connection (Mongoose)
-├── controllers/            <-- Route logic (business logic)
-├── middlewares/           <-- Auth or error handlers
-├── models/                 <-- Mongoose schemas
-├── routes/                 <-- Express route files (API endpoints)
-├── utils/                  <-- Helpers/utilities
-├── server.js              <-- Main backend entry point
-├── .env                   <-- Secrets (MONGO_URI, API Keys)
-├── .gitignore             <-- Ignore sensitive files
+├── client/
+│   ├── node_modules/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Layout/
+│   │   │   │   ├── Footer.js
+│   │   │   │   ├── Header.js
+│   │   │   │   ├── Layout.css
+│   │   │   │   └── Layout.js
+│   │   │   ├── Analytic.js
+│   │   │   ├── Bot.js
+│   │   │   ├── ChatWidget.js
+│   │   │   ├── NewsCalls.js
+│   │   │   └── Spinner.js
+│   │   ├── page/
+│   │   ├── App.css
+│   │   ├── App.js
+│   │   ├── App.test.js
+│   │   ├── index.css
+│   │   ├── index.js
+│   │   ├── logo.svg
+│   │   ├── reportWebVitals.js
+│   │   ├── setupTests.js
+│   │   └── StockTable.js
+├── config/
+├── controllers/
+├── middlewares/
+├── models/
+│   ├── transactionModel.js
+│   └── userModel.js
+├── routes/
+│   ├── transactionRoute.js
+│   └── userRoute.js
+├── utils/
+├── .env
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+└── server.js
 
-
-## Frontend Structure
-src/
-├── components/             <-- Reusable UI parts
-│   ├── Layout/             <-- Header, Footer, Sidebar etc.
-│   ├── Bot.js              <-- Gemini/Chat integration
-│   ├── StockTable.js       <-- Stock display
-│   └── NewsCalls.js        <-- Daily news component
-├── page/                   <-- (Probably pages like Dashboard, Login)
-├── App.js                  <-- Main component, handles routes
-├── index.js                <-- React entry point
-
----
 
 ## 🔗 External API Integrations
 
