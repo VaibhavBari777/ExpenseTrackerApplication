@@ -29,9 +29,3 @@ const PORT = process.env.PORT || 8080
 app.listen(PORT , ()=>{
     console.log(`Server runnning on ${PORT}`)
 })
-
-//pass : NFqFgyi2buUAb2QR
-
-//pass2 : yHQsGahNmOa1yHSr
-
-// mongodb+srv://vaibhavbari999:yHQsGahNmOa1yHSr@cluster0.0orfxav.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
